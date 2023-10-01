@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a disney website" />
+    <meta name="keyword" content="Cartoon, animation" />
+
+    <title>Demo Website</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- BootStrap 4 CSS -->
+    <link
+      href="./assets/library/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="scrollToTop"></div>
+    <!-- Header -->
+    <header class="header">
+      <nav
+        class="bg-transparent fixed-top navbar navbar-expand-lg navbar-light"
+      >
+        <div class="container">
+          <div class="logo mr-auto">
+            <a class="navbar-brand" href="/">
+              <img src="./assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse header-navigation flex-grow-0"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Guides
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Flights
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                  <a class="dropdown-item" href="#">Submenu</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-btn">
+            <a href="contact.html" class="btn btn-outline">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span class="text">Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <header class="header">
+      <div class="container">
+        <div class="header-inner d-flex flex-wrap align-items-center">
+          <div class="logo">
+            <a href="/"><img src="./assets/images/logo.png" alt="Logo" /></a>
+          </div>
+          <nav class="header-navigation">
+            <ul class="d-flex list-unstyle">
+              <li><a href="/">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Guides</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Submenu</a></li>
+                  <li><a href="#">Submenu Submenu Submenu</a></li>
+                  <li><a href="#">Submenu</a></li>
+                  <li><a href="#">Submenu</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Flights</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Submenu</a></li>
+                  <li><a href="#">Submenu</a></li>
+                  <li><a href="#">Submenu</a></li>
+                  <li><a href="#">Submenu</a></li>
+                </ul>
+              </li>
+              <li>                                
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger js-hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="header-btn">            
+            <a href="contact.html" class="btn btn-outline">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span class="text">Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <!-- End Header -->
+    <!-- Home Banner -->
+    <!-- <section class="home-banner section-padding">
+      <div class="container">
+        <div class="home-banner__inner">
+          <div class="sec-row align-items-center">
+            <div class="sec-col col-left">
+              <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="heading">Travel to your dream destination</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum sus pendisse ultrices gravida.
+                </p>
+                <div class="btn-block">
+                  <a href="#" class="btn">Reserve Ticket</a>
+                </div>
+              </div>
+            </div>
+            <div class="sec-col col-right">
+              <figure data-aos="fade-up" data-aos-duration="1000">
+                <img src="./assets/images/banner-img.jpg" alt="Banner Image" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Home Banner -->
+    <!-- Create a Memory -->
+    <!-- <section
+      class="memory-sec section-padding"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="memory-sec__inner">
+          <div class="sec-row">
+            <div class="sec-col">
+              <div class="content">
+                <h2 class="heading">Create a memory to remember</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed
+                  do ei usmod tempor incididunt ut labore et dolore magna
+                  aliqua. Quis ipsum sus pendisse ultrices gravida.
+                </p>
+                <div class="btn-block">
+                  <a href="#" class="btn btn-outline-2">My Travel Logs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Create a Memory -->
+    <!-- Services Section -->
+    <!-- <section class="services-sec section-padding">
+      <div class="container">
+        <div class="services-sec__inner">
+          <div class="sec-row">
+            <div
+              class="sec-col"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="content">
+                <figure class="mb-30">
+                  <img
+                    src="./assets/images/service-img-1.jpg"
+                    alt="Service Image"
+                  />
+                </figure>
+                <div class="sec-content">
+                  <h3 class="heading heading-top-line">
+                    Lorem ipsum dolor sit amet
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi scing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum sus pendisse ultrices gravida.
+                  </p>
+                </div>
+                <div class="btn-block">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sec-col"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <figure class="mb-30">
+                  <img
+                    src="./assets/images/service-img-2.jpg"
+                    alt="Service Image"
+                  />
+                </figure>
+                <div class="sec-content">
+                  <h3 class="heading heading-top-line">
+                    Lorem ipsum dolor sit amet
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi scing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum sus pendisse ultrices gravida.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi scing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum sus pendisse ultrices gravida.
+                  </p>
+                </div>
+                <div class="btn-block">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sec-col"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="content">
+                <figure class="mb-30">
+                  <img
+                    src="./assets/images/service-img-3.jpg"
+                    alt="Service Image"
+                  />
+                </figure>
+                <div class="sec-content">
+                  <h3 class="heading heading-top-line">
+                    Lorem ipsum dolor sit amet
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi scing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum sus pendisse ultrices gravida.
+                  </p>
+                </div>
+                <div class="btn-block">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sec-col"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="content">
+                <figure class="mb-30">
+                  <img
+                    src="./assets/images/service-img-3.jpg"
+                    alt="Service Image"
+                  />
+                </figure>
+                <div class="sec-content">
+                  <h3 class="heading heading-top-line">
+                    Lorem ipsum dolor sit amet
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi scing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum sus pendisse ultrices gravida.
+                  </p>
+                </div>
+                <div class="btn-block">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Services Section -->
+    <!-- Places sec -->
+    <!-- <section class="places-sec section-padding-bottom">
+      <div class="container">
+        <div class="places-sec__inner">
+          <div class="sec-heading" data-aos="fade-up" data-aos-duration="1000">
+            <div class="content text-center">
+              <figure class="mb-60">
+                <img
+                  class="w-auto"
+                  src="./assets/images/places-heading-icon.png"
+                  alt=""
+                />
+              </figure>
+              <h2 class="heading">
+                See places you’ve
+                <span class="bottom-line"><i>never</i></span> been before
+              </h2>
+              <p>Lorem Ipsum Dolor | Lorem Ipsum Dolor | Lorem Ipsum Dolor</p>
+            </div>
+          </div>
+          <div
+            class="sec-content section-padding-top"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="sec-row">
+              <div class="sec-col left-sec">
+                <figure>
+                  <img src="./assets/images/place-1.jpg" alt="Image" />
+                  <img
+                    src="./assets/images/image-clip.png"
+                    alt="Image"
+                    class="clip"
+                  />
+                </figure>
+              </div>
+              <div class="sec-col right-sec">
+                <div class="content">
+                  <div class="place-img">
+                    <figure class="mb-60">
+                      <img
+                        class="w-auto"
+                        src="./assets/images/place-2.jpg"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="place-details d-flex flex-wrap">
+                    <h3 class="heading">
+                      <u
+                        >Lorem ipsum dolor sit amet consectetur adipiscing elit
+                        sed do ei</u
+                      >
+                    </h3>
+                    <div class="place-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud.
+                      </p>
+                      <p>
+                        Exercitation ullamc o laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn-block text-right">
+                    <a href="#"
+                      ><img
+                        class="w-auto"
+                        src="./assets/images/right-arrow.png"
+                        alt="arrow"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Places sec -->
+    <!-- Anywhere Sec -->
+    <div data-section-name="aboutSec"></div>
+    <!-- <section
+      class="anywhere-sec section-padding"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="anywhere-sec__inner remove-right-space">
+          <div class="sec-row">
+            <div class="sec-col col-left">
+              <div class="sec-content">
+                <div class="content">
+                  <h2 class="heading">Choose anywhere you’d like to be</h2>
+                  <h5 class="sub-heading">Lorem Ipsum dolor</h5>
+                  <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in repre henderit in voluptate velit
+                    esse.
+                  </p>
+                  <h5 class="sub-heading">Lorem Ipsum dolor</h5>
+                  <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in repre henderit in voluptate velit
+                    esse.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sec-col col-right">
+              <figure>
+                <img src="./assets/images/anywhere-img.jpg" alt="Image" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Anywhere Sec -->
+    <!-- Faqs -->
+    <!-- <section
+      class="faqs-sec section-padding"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="faqs-sec__inner">
+          <div class="sec-row">
+            <div class="sec-col left-sec">
+              <div class="sec-content">
+                <h2 class="h1 heading">
+                  Lorem ipsum dolor sit amet consectetur
+                </h2>
+                <div class="accordion-sec">
+                  <ul class="accordion-list">
+                    <li>
+                      <h3>How much does a website cost?</h3>
+                      <div class="answer">
+                        <p>
+                          While we would love to be able to give a definitive,
+                          fixed price for a website, it really depends on the
+                          specific needs for each individual business. If one
+                          business needs a website comprised of five pages,
+                          while another has a substantially larger site of over
+                          100 pages - obviously those projects are going to
+                          command different price points.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>Are there any monthly fees?</h3>
+                      <div class="answer">
+                        <p>
+                          This will vary depending on the type of project. For
+                          logo & branding projects, fees will be one-time costs.
+                          For website projects, we will typically charge a
+                          monthly fee, depending on the level of service you
+                          choose. To view a full list of our monthly packages,
+                          click here.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>How much does a logo cost?</h3>
+                      <div class="answer">
+                        <p>
+                          Logo projects typically cost between $3,000 - $5000.
+                        </p>
+                        <p>
+                          "Why so much?" many people ask. To answer simply -
+                          because they require a lot of work. At least, to do
+                          them properly. And of all of the investments that you
+                          will make for your business, your logo & branding is
+                          one area where you don't want to skimp.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>
+                        What separates Right Creative from other top design
+                        agencies in the area?
+                      </h3>
+                      <div class="answer">
+                        <p>Experience, quality, and results.</p>
+                        <p>
+                          <strong>Experience.</strong> We have been designing
+                          websites professional since the early days of the web
+                          - before CSS was mainstream, and people still used
+                          tables for their website layouts. In the 20+ years
+                          that we have been doing this, we have work with and
+                          learned from many of the top voices in several
+                          industries. To put it simply - there are very few
+                          people in the world, let alone the area that can top
+                          our years of experience.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="sec-col right-sec">
+              <figure>
+                <img src="/assets/images/faq-img.jpg" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Faqs -->
+    <!-- Testimonial -->
+    <!-- <section
+      class="testimonial-sec section-padding"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="testimonial-sec__inner">
+          <div class="sec-heading mb-40">
+            <div class="heading-content text-center">
+              <h2 class="h1 heading">Here’s what they have to say...</h2>
+            </div>
+          </div>
+          <div class="testimonial-slider-sec mb-30">
+            <div
+              class="testimonial-slider owl-carousel owl-theme"
+              id="testimonialSlider"
+            >
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name 2</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name 3</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name 4</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name 5</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card text-center">
+                <figure>
+                  <img src="./assets/images/customer-img.png" alt="" />
+                </figure>
+                <div class="testimonial-card__content">
+                  <h5 class="heading">Customer Name 6</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Testimonial -->
+    <!-- Be Updaetd Sec -->
+    <div data-section-name="contact"></div>
+    <!-- <section
+      class="be-updated-sec section-padding"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="be-updated__inner">
+          <div class="sec-row">
+            <div class="sec-col left-sec">
+              <div class="sec-content">
+                <h2 class="h1 heading mb-30">Be updated!</h2>
+                <div class="be-updated-form">
+                  <form name="be-updated" class="site-form d-flex">
+                    <div class="form-elements">
+                      <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input
+                          type="text"
+                          name="first-name"
+                          id="first-name"
+                          placeholder="First Name*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input
+                          type="text"
+                          name="last-name"
+                          id="last-name"
+                          placeholder="Last Name*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email-name">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <textarea
+                          name="subject"
+                          id="subject"
+                          placeholder="Write Something...."
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="btn-block mt-50 mt-md-30 text-center">
+                      <button
+                        type="submit"
+                        class="btn"
+                        name="submit"
+                        id="submit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="sec-col right-sec">
+              <figure class="img-height-100">
+                <img src="./assets/images/be-updated.jpg" alt="Be Updated" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Be Updaetd Sec -->
+    <!-- Footer -->
+    <!-- <footer
+      class="footer section-padding bg-grey"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="footer__inner">
+          <div class="sec-row">
+            <div class="sec-col left-sec">
+              <div class="sec-content">
+                <h2 class="heading">My Log Travels</h2>
+              </div>
+            </div>
+            <div class="sec-col right-sec">
+              <div class="sec-content">
+                <h5 class="mb-30">Quick Links</h5>
+                <div class="sec-row">
+                  <div class="sec-col">
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                    </ul>
+                  </div>
+                  <div class="sec-col">
+                    <ul>
+                      <li><a href="#">Travels</a></li>
+                      <li><a href="#">Promo Flights</a></li>
+                      <li><a href="#">Travel Routes</a></li>
+                    </ul>
+                  </div>
+                  <div class="sec-col">
+                    <ul>
+                      <li><a href="#">Recommendations</a></li>
+                      <li><a href="#">Guides</a></li>
+                      <li><a href="#">Blogs</a></li>
+                    </ul>
+                  </div>
+                  <div class="sec-col">
+                    <ul>
+                      <li><a href="#">Mission Statement</a></li>
+                      <li><a href="#">The Team</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright text-center mt-100">
+            <span>2021 - 2022 My Log Travels. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- End Footer -->
+
+    <!-- Scroll To Top -->
+    <a href="#scrollToTop" class="scrollToTop"
+      ><i class="fa-solid fa-angle-up"></i
+    ></a>
+
+    <!-- Jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap 4 JS -->
+    <script src="./assets/library/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/library/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
